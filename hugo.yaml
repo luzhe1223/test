@@ -19,9 +19,8 @@ enableSearch : true
 redirects:
 - from: /*
   status: 404
-  to: /404.html
-busuanzi:
-    enable: true
+  to: 404.html
+
 outputs:
   home:
     - HTML
@@ -105,21 +104,15 @@ minify:
     minifyOutput: true
 
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: ExampleSite
-    description: "ExampleSite description"
-    keywords: [Blog, Portfolio, PaperMod]
-    author: Me
-    # author: ["Me", "You"] # multiple authors
+    env: production # to enable google analytics, opengraph, twitter-cards and schema
     images: ["<link or path of image for opengraph, twitter-cards>"]
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
     disableThemeToggle: false
-
     ShowReadingTime: true
-    ShowShareButtons: true
+    #ShowShareButtons: true
     ShowPostNavLinks: true
-    ShowBreadCrumbs: true
+    #ShowBreadCrumbs: true
     ShowCodeCopyButtons: false
     disableSpecial1stPost: false
     disableScrollToTop: false
@@ -128,7 +121,8 @@ params:
     hideSummary: false
     showtoc: false
     tocopen: false
-
+    busuanzi:
+      enable: true
     assets:
         # disableHLJS: true # to disable highlight.js
         # disableFingerprinting: true
@@ -139,7 +133,7 @@ params:
         safari_pinned_tab: "<link / abs url>"
 
     label:
-        text: "Home"
+        text: "对话的逻各斯"
         icon: /apple-touch-icon.png
         iconHeight: 35
 
