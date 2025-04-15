@@ -16,10 +16,11 @@ pagination:
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
 enableSearch : true
+ignoreLogs : warning-goldmark-raw-html
 redirects:
 - from: /*
   status: 404
-  to: 404.html
+  to: static/404.html
 
 outputs:
   home:
@@ -55,18 +56,22 @@ languages:
         - identifier: Archive
           name: Archive
           url: /archive/
+          pre: <i class="fa-solid fa-inbox"></i>
           weight: 10
         - identifier: Tags
           name: Tags
           url: /en/tags/
+          pre: <i class="fa-solid fa-bookmark"></i>
           weight: 20
         - identifier: Works
           name: Works
           url: /en/works/
+          pre: <i class="fa-solid fa-robot"></i>
           weight: 30
         - identifier: search
           name: Search
           url: /search/
+          pre: <i class="fa-solid fa-magnifying-glass"></i>
           weight: 40
    
   zh:
@@ -120,9 +125,13 @@ params:
     hidemeta: false
     hideSummary: false
     showtoc: false
-    tocopen: false
+    tocopen: true
     busuanzi:
       enable: true
+    enableCopyright: true
+    licenseLink: "https://creativecommons.org/licenses/by-nc/4.0/"
+    licenseName: "CC BY-NC 4.0"    
+
     assets:
         # disableHLJS: true # to disable highlight.js
         # disableFingerprinting: true
@@ -140,11 +149,8 @@ params:
 
     analytics:
         google:
-            SiteVerificationTag: "XYZabc"
-        bing:
-            SiteVerificationTag: "XYZabc"
-        yandex:
-            SiteVerificationTag: "XYZabc"
+            SiteVerificationTag: "G-R6Y2KPM9CB"
+        
 
     cover:
         hidden: true # hide everywhere but not in structured data
@@ -152,6 +158,7 @@ params:
         hiddenInSingle: true # hide on single page
 
     editPost:
+        disabled: true
         URL: "https://github.com/<path_to_repo>/content"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
@@ -169,10 +176,15 @@ params:
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
-# markup:
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 #     highlight:
 #         # anchorLineNos: true
 #         codeFences: true
 #         guessSyntax: true
 #         lineNos: true
 #         style: monokai
+permalinks:
+  post: /:year/:month/:title/:slug/

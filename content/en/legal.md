@@ -1,34 +1,26 @@
-
-
+---
+title: "copyright"
+draft: true
+ShowReadingTime: false
+#showToc: false
+#TocOpen: false
+#comments: false
+enableCopyright: false
+---
 
 # Content Licensing
 
-# Posts
+## Posts
 
 Posts are copyright (c) Jason all rights reserved.
 
-# Code
+## Code
 
 Code contained in posts is licensed under the MIT license unless otherwise specified. This default license does not replace, or supersede a license explicitly applied to any code.
 
-```
-Copyright (c) Top Trends Jason <jasonlu1223@gmail.com>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the “Software”), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
+All content on this site is licensed under the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en" target="_blank" rel="noopener noreferrer" style="color: rgb(247, 138, 47);">
+    CC BY-NC-ND 4.0
+</a> Creative Commons Attribution - Non-Commercial - No Deduction 4.0 International License.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+                Copyright (c) Top Trends Jason <jasonlu1223@gmail.com>

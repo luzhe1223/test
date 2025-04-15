@@ -1,0 +1,45 @@
+/* Copyright section styling */
+.copyright {
+  padding: 1.5rem;
+  text-align: left;
+  font-size: 0.9em;
+  color: #444;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin: 2rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.copyright blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: none;
+  font-size: 1em;
+}
+
+.copyright p {
+  margin: 0.6em 0;
+  line-height: 1.6;
+}
+
+.copyright a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.copyright a:hover {
+  color: #004499;
+  text-decoration: underline;
+}
+
+.license-notice {
+  color: #666;
+  font-style: italic;
+  font-size: 0.9em;
+  padding: 0.5rem;
+  background: #fff3cd;
+  border-left: 4px solid #ffeeba;
+  margin: 0.5rem 0;
+}
