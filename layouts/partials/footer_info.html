@@ -1,0 +1,17 @@
+<!-- 将 footer.html 中 <footer> 的代码移至 footer_info.html -->
+    <footer class="footer">
+        <span>&copy; {{ now.Year }} <a href="/about/">Jason</a></span>
+        <span>
+            Powered by
+            <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+            <a href="https://github.com/adityatelange/hugo-PaperMod" rel="noopener" target="_blank">PaperMod</a>
+        </span>
+        <span>·&nbsp;<a href="/en/legal/">Copyright</a></span>
+        <span>·&nbsp;<a href="/en/log/">Log</a></span>
+            <!-- busuanzi -->
+         {{ if site.Params.busuanzi.enable -}}
+        <div class="busuanzi-footer">
+           <span id="busuanzi_container_site_pv">Visits <span id="busuanzi_value_site_pv"></span> times </span>
+       </div>
+        {{- end -}}
+    </footer>

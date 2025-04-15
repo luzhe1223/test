@@ -1,4 +1,4 @@
-baseURL: "https://examplesite.com/"
+baseURL: "https://test-stp.pages.dev"
 title: ExampleSite
 theme: PaperMod
 
@@ -6,7 +6,99 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableSearch : true
+enableEmoji : true
+enableRobotsTXT : true
+enableSitemap : true
+hasCJKLanguage : true
+pagination: 
+  pagerSize: 20
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+enableSearch : true
+redirects:
+- from: /*
+  status: 404
+  to: /en/404.html
+busuanzi:
+    enable: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
 
+languages:
+  en:
+    languageName: "English"
+    contentDir: content/en
+    title : Dogma
+    params:
+      homeInfoParams:
+        enabled: true
+        title: JL
+        Content: |
+          Welcome to my blog and take a look around. Maybe you'll find something you'll like.
+          I like to write about a variety of topics but most posts are computer focused.
+          While I mainly write for myself, I hope that some of what I post will be useful
+          for others.    
+      socialIcons:
+        - name: github
+          url: 'https://github.com/luzhe1223'
+        - name: email
+          url: 'mailto:jasonlu1223@gmail.com'
+      label:
+      text: "Dogma"
+      icon: /assets/images/logo.png
+      iconHeight: 35
+    menu:      
+      main:
+        - identifier: Archive
+          name: Archive
+          url: /archive/
+          weight: 10
+        - identifier: Tags
+          name: Tags
+          url: /en/tags/
+          weight: 20
+        - identifier: Works
+          name: Works
+          url: /en/works/
+          weight: 30
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 40
+   
+  zh:
+    languageName: "中文"
+    contentDir: content/cn
+    title : 对话的逻各斯
+    params:
+      profileMode:
+        enabled: true
+        title: 2Yifan
+        subtitle: 
+        imageUrl: 'icons/logo.png'
+        imageWidth: 110
+        imageHeight: 110
+        buttons:
+          - name: Chat
+            url: /cn/posts/chat
+          - name: Blog
+            url: /cn/posts/blog
+          - name: Tutorials
+            url: /cn/posts/tutorials
+        label:
+          - text: "对话的逻各斯"
+          - icon: /assets/images/logo.png
+      socialIcons:
+        - name: github
+          url: 'https://github.com/luzhe1223'
+        - name: email
+          url: 'mailto:jasonlu1223@gmail.com'
+        - name: X
+          url: 'Ccer@2019'
 
 minify:
     disableXML: true
@@ -51,33 +143,6 @@ params:
         icon: /apple-touch-icon.png
         iconHeight: 35
 
-    # profile-mode
-    profileMode:
-        enabled: false # needs to be explicitly set
-        title: ExampleSite
-        subtitle: "This is subtitle"
-        imageUrl: "<img location>"
-        imageWidth: 120
-        imageHeight: 120
-        imageTitle: my image
-        buttons:
-            - name: Posts
-              url: posts
-            - name: Tags
-              url: tags
-
-    # home-info mode
-    homeInfoParams:
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to my blog
-
-    socialIcons:
-        - name: twitter
-          url: "https://twitter.com/"
-        - name: stackoverflow
-          url: "https://stackoverflow.com"
-        - name: github
-          url: "https://github.com/"
 
     analytics:
         google:
@@ -107,17 +172,6 @@ params:
         threshold: 0.4
         minMatchCharLength: 0
         keys: ["title", "permalink", "summary", "content"]
-menu:
-    main:
-        - name: categories
-          url: /categories/
-          weight: 10
-        - name: tags
-          url: /tags/
-          weight: 20
-        - name: example.org
-          url: https://example.org
-          weight: 30
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
