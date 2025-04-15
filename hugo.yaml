@@ -19,7 +19,7 @@ enableSearch : true
 redirects:
 - from: /*
   status: 404
-  to: /en/404.html
+  to: /404.html
 busuanzi:
     enable: true
 outputs:
