@@ -25,6 +25,19 @@
       {{- partial "translation_list.html" . -}}
       {{- partial "edit_post.html" . -}}
       {{- partial "post_canonical.html" . -}}
+
+      <!-- 【Begin】不蒜子 -->
+      {{- if .Site.Params.busuanzi.enable -}}
+      {{ $lang := .Site.Language.Lang }}
+      <div class="meta-item">&nbsp·&nbsp
+      {{ if eq $lang "zh" }}
+      <span id="busuanzi_container_page_pv">阅读量：<span id="busuanzi_value_page_pv"></span></span>
+      {{- else }}
+      <span id="busuanzi_container_page_pv">Readings: <span id="busuanzi_value_page_pv"></span></span>
+      {{- end }}
+      </div>
+      {{- end }}
+  <!-- 【End】不蒜子 -->
     </div>
     {{- end }}
   </header>

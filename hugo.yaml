@@ -20,7 +20,7 @@ ignoreLogs : warning-goldmark-raw-html
 redirects:
 - from: /*
   status: 404
-  to: static/404.html
+  to: ./static/404.html
 
 outputs:
   home:
@@ -48,35 +48,35 @@ languages:
         - name: email
           url: 'mailto:jasonlu1223@gmail.com'
       label:
-      text: "Dogma"
-      icon: /assets/images/logo.png
-      iconHeight: 35
+        text: "Dogma"
+        icon: icons/favicon-96x96.png
+        iconHeight: 35
     menu:      
       main:
         - identifier: Archive
-          name: Archive
+          name: ' Archive'
           url: /archive/
           pre: <i class="fa-solid fa-inbox"></i>
           weight: 10
         - identifier: Tags
-          name: Tags
+          name: ' Tags'
           url: /en/tags/
           pre: <i class="fa-solid fa-bookmark"></i>
           weight: 20
         - identifier: Works
-          name: Works
+          name: ' Works'
           url: /en/works/
           pre: <i class="fa-solid fa-robot"></i>
           weight: 30
         - identifier: search
-          name: Search
+          name: '  Search'
           url: /search/
           pre: <i class="fa-solid fa-magnifying-glass"></i>
           weight: 40
    
   zh:
     languageName: "中文"
-    contentDir: content/cn
+    contentDir: content/posts
     title : 对话的逻各斯
     params:
       profileMode:
@@ -88,14 +88,13 @@ languages:
         imageHeight: 110
         buttons:
           - name: Chat
-            url: /cn/posts/chat
-          - name: Blog
-            url: /cn/posts/blog
+            url: /posts/chat
           - name: Tutorials
-            url: /cn/posts/tutorials
-        label:
-          - text: "对话的逻各斯"
-          - icon: /assets/images/logo.png
+            url: /posts/tutorials
+      label:
+        text: "对话的逻各斯"
+        icon: icons/favicon-96x96.png
+        iconHeight: 35
       socialIcons:
         - name: github
           url: 'https://github.com/luzhe1223'
@@ -103,14 +102,30 @@ languages:
           url: 'mailto:jasonlu1223@gmail.com'
         - name: X
           url: 'Ccer@2019'
-
+    menu:      
+      main:
+        - identifier: 归档
+          name: ' 归档'
+          url: /archive/
+          pre: <i class="fa-solid fa-inbox"></i>
+          weight: 1
+        - identifier: 标签
+          name: ' 标签'
+          url: /en/tags/
+          pre: <i class="fa-solid fa-bookmark"></i>
+          weight: 2
+        - identifier: 搜索
+          name: '  搜索'
+          url: /search/
+          pre: <i class="fa-solid fa-magnifying-glass"></i>
+          weight: 3
 minify:
     disableXML: true
     minifyOutput: true
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema
-    images: ["<link or path of image for opengraph, twitter-cards>"]
+    images: ["./static/images/"]
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
     disableThemeToggle: false
@@ -140,11 +155,6 @@ params:
         favicon32x32: "<link / abs url>"
         apple_touch_icon: "<link / abs url>"
         safari_pinned_tab: "<link / abs url>"
-
-    label:
-        text: "对话的逻各斯"
-        icon: /apple-touch-icon.png
-        iconHeight: 35
 
 
     analytics:
