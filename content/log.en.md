@@ -1,6 +1,6 @@
 ---
 title: "Update Log"
-draft: true
+draft: false
 ShowReadingTime: false
 showToc: true
 TocOpen: true
