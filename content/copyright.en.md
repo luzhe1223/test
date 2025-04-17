@@ -2,8 +2,8 @@
 title: "copyright"
 draft: true
 ShowReadingTime: false
-#showToc: false
-#TocOpen: false
+showToc: true
+TocOpen: true
 #comments: false
 enableCopyright: false
 ---

@@ -32,5 +32,5 @@
 - id: code_copied
   translation: "已复制！"
 
-- id: copyright_statement
-  translation: "版权声明"
+- id: update_log
+  translation: "更新日志"
