@@ -1,0 +1,12 @@
+.pagination a.last-icon {
+    background: unset;
+    border: unset;
+    font-size: 1.3rem;
+    color: #001e1d;
+    /* padding-top: 2px; */
+    font-weight: bold;
+  }
+  
+  .pagination a.last-icon {
+    color: var(--primary);
+  }

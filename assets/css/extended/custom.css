@@ -1,0 +1,35 @@
+
+@font-face {
+  font-family: 'LXGWWenKaiScreen';
+  src: url('/fonts/LXGWWenKaiScreen.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal  /* 定义可变字重范围 */
+  
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/fonts/OpenSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal  /* 定义可变字重范围 */
+} 
+
+:root {
+  --main-font: 'OpenSans', sans-serif;
+}  
+  /* 中文环境 */
+:lang(zh) {
+  font-family: 'LXGWWenKaiScreen', var(--main-font);
+    /* 调整字号（可选） */
+  font-size: 1em;
+}
+  
+  /* 英语环境 */
+:lang(en) {
+  font-family: 'OpenSans', var(--main-font);
+  font-size: 1em;
+}
+  
+
+
+  

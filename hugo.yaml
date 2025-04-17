@@ -134,12 +134,12 @@ minify:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema
     images: ["./static/images/"]
-    contentDir: content/posts/en/
+    contentDir: content/posts/
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
     disableThemeToggle: false
     ShowReadingTime: true
-    #ShowShareButtons: true
+    ShowPageNums: true
     ShowPostNavLinks: true
     #ShowBreadCrumbs: true
     ShowWordCount: true
@@ -157,6 +157,7 @@ params:
     enableCopyright: true
     licenseLink: "https://creativecommons.org/licenses/by-nc/4.0/"
     licenseName: "CC BY-NC 4.0"    
+    math: true
 
     assets:
         # disableHLJS: true # to disable highlight.js
@@ -166,7 +167,8 @@ params:
         favicon32x32: "<link / abs url>"
         apple_touch_icon: "<link / abs url>"
         safari_pinned_tab: "<link / abs url>"
-
+        css:
+          - extended/custom.css
 
     analytics:
         google:
@@ -207,5 +209,17 @@ markup:
          guessSyntax: true
          lineNos: true
          style: monokai
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
 permalinks:
   post: /:year/:month/:title/:slug/
