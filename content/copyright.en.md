@@ -1,6 +1,6 @@
 ---
 title: "copyright"
-draft: true
+draft: false
 ShowReadingTime: false
 showToc: true
 TocOpen: true
